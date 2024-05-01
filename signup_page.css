@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: url(images/choks.jpg);
+}
+
+.wrapper{
+    width: 430px;
+    padding: 2rem 1rem;
+    margin: 170px auto;
+    backdrop-filter: blur(20px);
+    background-color: blur;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.2rem;
+}
+
+.nav__logo {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(70, 28, 23);
+    cursor: pointer;
+  }
+  
+  .nav__logo span {
+    color: #7e271e;
+  }
+.button .signup{
+    font-size: 4rem;
+    color: white;
+    text-decoration: none;
+}
+form input{
+    color: white;
+    width: 90%;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.link a {
+    padding: 0 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+button{
+    width: 340px;
+    font-size: 1rem;
+    margin-top: 1.4rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgb(24, 149, 199);
+}
+
+button:hover {
+    background: rgba(17, 107, 143, 0.877);
+}
+
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.terms{
+    color: rgb(233, 233, 233);
+    margin-top: 0.2rem;
+}
+
+.terms input {
+    color: white;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label{
+    font-size: 0.8rem;
+}
+
+.terms a{
+    color: rgb(12, 166, 226);
+    text-decoration: none;
+
+}
+
+.account{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #ffffff;
+
+}
+
+.account a{
+    color: rgb(13, 167, 228);
+    text-decoration: none;
+}
+
+.recover{
+    text-decoration: none;
+    text-align: right;
+    font-size: 0.9rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}

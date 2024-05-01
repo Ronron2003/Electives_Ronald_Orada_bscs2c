@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="paymentcss.css">
+</head>
+
+<body>  
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="column">
+                        <h3 class="title">Billing Address</h3>
+                        <div class="input-box">
+                            <span>Full Name:</span>
+                            <input type="text"
+                            placeholder="Thors Tavern">
+                        </div>
+                        <div class="input-box">
+                            <span>Email:</span>
+                            <input type="email"
+                            placeholder="thorstavern@gmail.com">
+                        </div>
+                        <div class="input-box">
+                            <span>Contact Number:</span>
+                            <input type="text"
+                            placeholder="0923 567 8910">
+                        </div>
+                        <div class="input-box">
+                            <span>Region:</span>
+                            <select id="Region">
+                                <option value="country">Select Region:</option>
+                                <option value="Region1">Region I – Ilocos Region</option>
+                                <option value="Region2">Region II – Cagayan Valley</option>
+                                <option value="Region3">Region III – Central Luzon</option>
+                                <option value="Region4">Region IV‑A – CALABARZON</option>
+                                <option value="Region5">Region V – Bicol Region</option>
+                                <option value="Region6">Region VI – Western Visayas</option>
+                                <option value="Region7">Region VII – Central Visayas</option>
+                                <option value="Region7">Region VIII – Eastern Visayas</option>
+                                <option value="Region7">Region IX – Zamboanga Peninsula</option>
+                                <option value="Region7">Region X – Northern Mindanao</option>
+                                <option value="Region7">Region XI – Davao Region</option>
+                                <option value="Region7">Region XII – SOCCSKSARGEN</option>
+                                <option value="Region7">Region XIII – Caraga</option>
+
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span>Location:</span>
+                            <input type="text"
+                            placeholder="Thors Street Bldg.">
+                        </div>
+                        <div class="input-box">
+                            <span>Zip Code:</span>
+                            <input type="text"
+                            placeholder="7000">
+                        </div>
+                        <div class="input-box">
+                            <span>Quantity: </span>
+                            <input type="text"
+                            placeholder="4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="title">Payment Method</h3>
+                    <div class="input-box">
+                        <span>Cards Accepted:</span>
+                        <img src="./images/imgcards.png" alt="">
+                            <select id="Region">
+                                <option value="country">Select Card:</option required>
+                                <option value="Region1">Gcash</option>
+                                <option value="Region2">Master Card</option>
+                                <option value="Region4">Paypal Philippines</option>
+                                <option value="Region4">Landbank Visa Debit Card</option>
+                                <option value="Region3">Union Bank Platinum Debit Card</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span>Name On Card:</span>
+                        <input type="text"
+                        placeholder="Mr. ThorsTavern">
+                    </div>
+                    <div class="input-box">
+                        <span>Number:</span>
+                        <input type="text"
+                        placeholder="1111 2222 3333 4444">
+                    </div>
+                    <div class="input-box">
+                        <span>Expiration Date:</span>
+                        <input type="text"
+                        placeholder="MM/YY">
+                    </div>
+                    <div class="input-box">
+                        <span>CCV:</span>
+                        <input type="text"
+                        placeholder="123">
+                        <a href="order.html"><button class="btn1">Cancel</a></button>
+                        <a href="complete.html"><button class="btn1">Submit</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="order.css">
+
+    <title>Orders</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="title1">Thors<span>Tavern</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        <i class="ri-dashboard-fill"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <i class="ri-restaurant-line"></i>
+                        <div class="title">Menu Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="order.html">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <div class="title">Order Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-thumb-up-line"></i>
+                        <div class="title">Role & User Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="reviews.html">
+                        <i class="ri-chat-2-line"></i>
+                        <div class="title">Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-settings-3-line"></i>
+                        <div class="title">Settings</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="search here">
+                    <label for="search"><i class="ri-search-line"></i></label>
+               </div>
+               <div class="top-bar-icons">
+                    <i class="ri-mail-line"></i>
+                    <i class="ri-notification-3-fill"></i>
+                </div>
+              
+                <div class="user">
+                    <img src="user.png" alt="user">
+                </div>
+            </div>
+
+            <div class="tables">
+                <div class="active-orders">
+                  <div class="heading">
+                    <h2>User Management</h2>
+                    <div class="buttons">
+                      <div class="add-user">
+                        <a class="btn">Add User
+                            <i class="ri-add-circle-line"></i>
+                          </a>
+                      </div>
+                      <div class="filter">
+                        <a class="btn">Filter
+                          <i class="ri-filter-3-line"></i>
+                        </a>
+                        <div class="dropdown">
+                          <a href="#">Role</a>
+                          <a href="#">Status</a>
+                        </div>
+                      </div>
+                      <div class="sort">
+                        <a href="#" class="btn">Sort
+                          <i class="ri-sort-desc"></i>
+                        </a>
+                        <div class="dropdown">
+                          <a href="#">Name A-Z</a>
+                          <a href="#">Name Z-A</a>
+                          <a href="#">Oldest</a>
+                          <a href="#">Newest</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <table class="active">
+                    <thead>
+                      <tr>
+                        <td>User ID</td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Role</td>
+                        <td>Last Login</td>
+                        <td>Status</td>
+                        <td>Actions</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#5368</td>
+                        <td>Alaric Stormborne</td>
+                        <td>alaric_stormborne@mail.com</td>
+                        <td>User</td>
+                        <td>2024-04-15</td>
+                        <td>Active</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+                      <tr>
+                        <td>#8425</td>
+                        <td>Elara Moonshade</td>
+                        <td>elara_moonshade@mail.com</td>
+                        <td>User</td>
+                        <td>2024-04-15</td>
+                        <td>Active</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+                      <tr>
+                        <td>#1358</td>
+                        <td>Draven Blackwood</td>
+                        <td>draven_blackwood@example.com</td>
+                        <td>User</td>
+                        <td>2024-04-15</td>
+                        <td>Active</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+                      <tr>
+                        <td>#9648</td>
+                        <td>Calista Ravenwood</td>
+                        <td>calist_ravenwood@mail.com</td>
+                        <td>Admin</td>
+                        <td>2024-04-11</td>
+                        <td>Inactive</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+                      <tr>
+                        <td>#3467</td>
+                        <td>Garrick Stonehelm</td>
+                        <td>garrick_stonehelm@mail.com</td>
+                        <td>User</td>
+                        <td>2024-04-15</td>
+                        <td>Active</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+                      <tr>
+                        <td>#6485</td>
+                        <td>Seraphina Duskwing</td>
+                        <td>seraphina_duskwing@mail.com</td>
+                        <td>User</td>
+                        <td>2024-04-06</td>
+                        <td>Inactive</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+                      <tr>
+                        <td>#2891</td>
+                        <td>Thorne Wildblood</td>
+                        <td>thorne_wildblood@mail.com</td>
+                        <td>Admin</td>
+                        <td>2024-04-15</td>
+                        <td>Active</td>
+                        <td class="dropdown-icon"><i class="ri-more-line"></i>
+                            <div class="dropdown-content" id="moreOptionsDropdown">
+                                <a id="editUser1">Edit User</a>
+                                <a id="changeRole1">Change Role</a>
+                                <a id="resetPassword1">Reset Password</a>
+                                <a id="deactivateUser1">Deactivate User</a>
+                            </div>
+                        </td>   
+                      </tr>
+
+                      <!-- More User Rows -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+    </div>
+
+
+    <script>
+        // Get the dropdown icon
+const dropdownIcon = document.querySelector(".dropdown-icon");
+
+// Get the dropdown content
+const dropdownContent = document.querySelector(".dropdown-content");
+
+// Toggle the dropdown content when the icon is clicked
+dropdownIcon.addEventListener("click", function (e) {
+  // Toggle visibility
+  dropdownContent.style.display =
+    dropdownContent.style.display === "block" ? "none" : "block";
+
+  // Prevent the click from propagating (to avoid closing it immediately)
+  e.stopPropagation();
+});
+
+// Hide the dropdown content when clicking outside of it
+document.addEventListener("click", function () {
+  dropdownContent.style.display = "none";
+});
+
+// Handle dropdown item clicks (example actions)
+document.getElementById("editUser").addEventListener("click", function () {
+  alert("Edit User selected");
+});
+
+document.getElementById("changeRole").addEventListener("click", function () {
+  alert("Change Role selected");
+});
+
+document.getElementById("resetPassword").addEventListener("click", function () {
+  alert("Reset Password selected");
+});
+
+document.getElementById("deactivateUser").addEventListener("click", function () {
+  alert("Deactivate User selected");
+});
+
+    </script>
+
+
+</body>
+</html>

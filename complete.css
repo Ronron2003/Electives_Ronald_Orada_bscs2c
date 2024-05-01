@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container{
+    width: 630px;
+    padding: 2rem 1rem;
+    margin: 170px auto;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.container{
+background: transparent;
+
+}
+
+  .container .order-complete{
+    margin: 0;
+    padding: 0;
+  }
+  .nav__logo {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(70, 28, 23);
+    cursor: pointer;
+  }
+  
+  .nav__logo span {
+    color: #7e271e;
+  }
+
+  .order-complete h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin: 50px;
+    padding: 10px 10px;
+  }
+  .order-complete h1 span{
+    background: white;
+    border-radius: 50px;
+    color: brown;
+
+  }
+
+
+  .order-complete p{
+    color: white;
+    margin:20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  body{
+    background: url(images/macs.jpg);
+  }
+.btn{
+  padding: 0.5rem 1.5rem;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;  
+  text-decoration: none;
+  }
+
+  .btn:hover {
+    color: white;
+    border: 1px solid rgb(158, 44, 44);
+    text-decoration: none;
+    background-color: brown;
+  }

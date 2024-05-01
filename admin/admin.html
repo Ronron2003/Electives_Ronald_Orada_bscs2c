@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="reviewBox.css">
+    <link rel="stylesheet" href="reviews.css">
+
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="title1">Thors<span>Tavern</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-dashboard-fill"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <i class="ri-restaurant-line"></i>
+                        <div class="title">Menu Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="order.html">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <div class="title">Order Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="ri-thumb-up-line"></i>
+                        <div class="title">User Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="reviews.html">
+                        <i class="ri-chat-2-line"></i>
+                        <div class="title">Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-settings-3-line"></i>
+                        <div class="title">Settings</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="search here">
+                    <label for="search"><i class="ri-search-line"></i></label>
+                </div>
+                <div class="top-bar-icons">
+                    <i class="ri-mail-line"></i>
+                    <i class="ri-notification-3-fill"></i>
+                </div>
+                
+                <div class="user">
+                    <img src="user.png" alt="admin">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">6</div>
+                        <div class="card-name">Pending Orders</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="ri-time-line"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">4</div>
+                        <div class="card-name">Active Orders</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="ri-briefcase-line"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">235</div>
+                        <div class="card-name">Delivered</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="ri-briefcase-line"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">Php40,635</div>
+                        <div class="card-name">Sales</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tables">
+                <div class="order-management">
+                    <div class="heading">
+                        <h2>Pending Orders</h2>
+                        <a href="order.html" class="btn">View All</a>
+                    </div>
+                    <table class="pending">
+                        <thead>
+                            <td>Name</td>
+                            <td>Order/s</td>
+                            <td>Order ID</td>
+                            <td>Actions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monkey D. Luffy</td>
+                                <td>Brownie-Sundae, Tiramisu, Cheesecake</td>
+                                <td>#46235</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Naruto Uzumaki</td>
+                                <td>Red velvet cake, Beignets</td>
+                                <td>#81671</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Roronoa Zoro</td>
+                                <td>Flan, Crepes, Croissants </td>
+                                <td>#26480</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tanjiro Kamado</td>
+                                <td>Cinnamon rolls, Pastel de nata </td>
+                                <td>#70648</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Saitama</td>
+                                <td>Lava cake, Lamingtons</td>
+                                <td>#58140</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Itachi Uchiha</td>
+                                <td>Pecan pie, Lemon meringue pie</td>
+                                <td>#64832</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="active-orders">
+                    <div class="heading">
+                        <h2>Active Orders</h2>
+                        <a href="order.html" class="btn">View All</a>
+                    </div>
+                    <table class="active">
+                        <thead>
+                            <td>Order Number</td>
+                            <td>Name</td>
+                            <td>Order ID</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#0251</td>
+                                <td>Ichigo</td>
+                                <td>#59842</td>
+                                <td><i class="ri-check-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>#0252</td>
+                                <td>Rukia</td>
+                                <td>#65842</td>
+                                <td><i class="ri-check-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>#0253</td>
+                                <td>Renji</td>
+                                <td>#73468</td>
+                                <td><i class="ri-truck-line"></i></td>
+                            </tr>
+                            <tr>
+                                <td>#0254</td>
+                                <td>Byakuya</td>
+                                <td>#30221</td>
+                                <td><i class="ri-hourglass-2-fill"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="app">
+                <div class="testimonial-heading">
+                    <h1>Customer Rating & Feedbacks</h1>
+                </div>
+                <div class="rating">
+                    <div class="rating-average">
+                        <h1>4.5</h1>
+                        <div class="star-inner">
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-s-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                        <p>290,291</p>
+                    </div>
+                    <div class="rating-progress">
+                        <div class="rating-progress-value">
+                            <p>5 <span class="star">&#9733;</span></p>
+                            <div class="progress">
+                                <div class="bar1"></div>
+                            </div>
+                            <p>89,783</p>
+                        </div>
+                        <div class="rating-progress-value">
+                            <p>4 <span class="star">&#9733;</span></p>
+                            <div class="progress">
+                                <div class="bar2"></div>
+                            </div>
+                            <p>35,781</p>
+                        </div>
+                        <div class="rating-progress-value">
+                            <p>3 <span class="star">&#9733;</span></p>
+                            <div class="progress">
+                                <div class="bar3"></div>
+                            </div>
+                            <p>5,824</p>
+                        </div>
+                        <div class="rating-progress-value">
+                            <p>2 <span class="star">&#9733;</span></p>
+                            <div class="progress">
+                                <div class="bar4"></div>
+                            </div>
+                            <p>264</p>
+                        </div>
+                        <div class="rating-progress-value">
+                            <p>1 <span class="star">&#9733;</span></p>
+                            <div class="progress">
+                                <div class="bar5"></div>
+                            </div>
+                            <p>35</p>
+                        </div>
+        
+        
+        
+        
+                    </div>  
+                </div>
+                <div id="testimonials">
+                    
+                    <div class="testimonial-box-container">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Adrian Orada</strong>
+                                        <span>@qwerrytbr</span>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>  
+                            </div>
+                            <div class="client-comment">
+                                <p>I recently tried the food at Thors Tavern, and it was fantastic! The flavors were amazing, and each bite was a delight. The service was quick, and the staff was friendly. Definitely coming back for more!</p>
+                            </div>   
+                        </div>
+    
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Adrian Orada</strong>
+                                        <span>@qwerrytbr</span>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>  
+                            </div>
+                            <div class="client-comment">
+                                <p>I recently tried the food at Thors Tavern, and it was fantastic! The flavors were amazing, and each bite was a delight. The service was quick, and the staff was friendly. Definitely coming back for more!</p>
+                            </div>   
+                        </div>
+                    </div>
+            
+                    <div class="testimonial-box-container">
+    
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Adrian Orada</strong>
+                                        <span>@qwerrytbr</span>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>  
+                            </div>
+                            <div class="client-comment">
+                                <p>I recently tried the food at Thors Tavern, and it was fantastic! The flavors were amazing, and each bite was a delight. The service was quick, and the staff was friendly. Definitely coming back for more!</p>
+                            </div>   
+                        </div>
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Adrian Orada</strong>
+                                        <span>@qwerrytbr</span>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>  
+                            </div>
+                            <div class="client-comment">
+                                <p>I recently tried the food at Thors Tavern, and it was fantastic! The flavors were amazing, and each bite was a delight. The service was quick, and the staff was friendly. Definitely coming back for more!</p>
+                            </div>   
+            
+                            </div>
+                    </div>
+            
+                    <div class="testimonial-box-container">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Adrian Orada</strong>
+                                        <span>@qwerrytbr</span>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>  
+                            </div>
+                            <div class="client-comment">
+                                <p>I recently tried the food at Thors Tavern, and it was fantastic! The flavors were amazing, and each bite was a delight. The service was quick, and the staff was friendly. Definitely coming back for more!</p>
+                            </div>   
+                        </div>
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <!--image here-->
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Adrian Orada</strong>
+                                        <span>@qwerrytbr</span>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>  
+                            </div>
+                            <div class="client-comment">
+                                <p>I recently tried the food at Thors Tavern, and it was fantastic! The flavors were amazing, and each bite was a delight. The service was quick, and the staff was friendly. Definitely coming back for more!</p>
+                            </div>   
+            
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

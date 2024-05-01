@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="order.css" />
+    <link rel="stylesheet" href="">
+
+    <title>Orders</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="title1">Thors<span>Tavern</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        <i class="ri-dashboard-fill"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <i class="ri-restaurant-line"></i>
+                        <div class="title">Menu Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="order.html">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <div class="title">Order Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <i class="ri-thumb-up-line"></i>
+                        <div class="title">User Management</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="reviews.html">
+                        <i class="ri-chat-2-line"></i>
+                        <div class="title">Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="ri-settings-3-line"></i>
+                        <div class="title">Settings</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="search here">
+                    <label for="search"><i class="ri-search-line"></i></label>
+               </div>
+               <div class="top-bar-icons">
+                    <i class="ri-mail-line"></i>
+                    <i class="ri-notification-3-fill"></i>
+                </div>
+              
+                <div class="user">
+                    <img src="user.png" alt="user">
+                </div>
+            </div>
+
+            <div class="tables">
+                <div class="order-management">
+                    <div class="heading">
+                        <h2>Pending Orders</h2>
+                    </div>
+                    <table class="order-page">
+                        <thead>
+                            <td>#</td>
+                            <td>Name</td>
+                            <td>Order/s</td>
+                            <td>Order ID</td>
+                            <td>Actions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Monkey D. Luffy</td>
+                                <td>Brownie-Sundae, Tiramisu, Cheesecake</td>
+                                <td>#46235</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    
+                                    <i class="ri-close-circle-line icon-button" onclick="showModal()"></i>
+                                    <div class="modal-overlay" onclick="closeModal()"></div>
+                                    <div class="confirmation-modal">
+                                        <p>Select reasons for cancellation:</p>
+                                        <div class="reasons-container">
+                                            <label>
+                                                <input type="checkbox" name="reason" value="customer_request"> Customer request
+                                            </label>
+                                            <br>
+                                            <label>
+                                                <input type="checkbox" name="reason" value="out_of_stock">  Out of stock
+                                            </label>
+                                            <br>
+                                            <label>
+                                                <input type="checkbox" name="reason" value="payment_issues"> Payment issues
+                                            </label>
+                                            <br>
+                                            <label>
+                                                <input type="checkbox" name="reason" value="delivery_issues"> Delivery issues
+                                            </label>
+                                            <br>
+                                        </div>
+                                        <div class="btn-container">
+                                            <button class="yes" onclick="confirmDecline()">Submit</button>
+                                            <button class="no" onclick="closeModal()">Cancel</button>
+                                        </div>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Naruto Uzumaki</td>
+                                <td>Red velvet cake, Beignets</td>
+                                <td>#81671</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line icon-button" onclick="showModal()"></i>
+                                    <div class="modal-overlay" onclick="closeModal()"></div>
+                                    <div class="confirmation-modal">
+                                        <p>Are you sure you want to decline?</p>
+                                        <div class="btn-container">
+                                            <button class="yes" onclick="confirmDecline()">Yes</button>
+                                            <button class="no" onclick="closeModal()">No</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Roronoa Zoro</td>
+                                <td>Flan, Crepes, Croissants </td>
+                                <td>#26480</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line icon-button" onclick="showModal()"></i>
+                                    <div class="modal-overlay" onclick="closeModal()"></div>
+                                    <div class="confirmation-modal">
+                                        <p>Are you sure you want to decline?</p>
+                                        <div class="btn-container">
+                                            <button class="yes" onclick="confirmDecline()">Yes</button>
+                                            <button class="no" onclick="closeModal()">No</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tanjiro Kamado</td>
+                                <td>Cinnamon rolls, Pastel de nata </td>
+                                <td>#70648</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line icon-button" onclick="showModal()"></i>
+                                    <div class="modal-overlay" onclick="closeModal()"></div>
+                                    <div class="confirmation-modal">
+                                        <p>Are you sure you want to decline?</p>
+                                        <div class="btn-container">
+                                            <button class="yes" onclick="confirmDecline()">Yes</button>
+                                            <button class="no" onclick="closeModal()">No</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Saitama</td>
+                                <td>Lava cake, Lamingtons</td>
+                                <td>#58140</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line icon-button" onclick="showModal()"></i>
+                                    <div class="modal-overlay" onclick="closeModal()"></div>
+                                    <div class="confirmation-modal">
+                                        <p>Are you sure you want to decline?</p>
+                                        <div class="btn-container">
+                                            <button class="yes" onclick="confirmDecline()">Yes</button>
+                                            <button class="no" onclick="closeModal()">No</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Itachi Uchiha</td>
+                                <td>Pecan pie, Lemon meringue pie</td>
+                                <td>#64832</td>
+                                <td>
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-close-circle-line icon-button" onclick="showModal()"></i>
+                                    <div class="modal-overlay" onclick="closeModal()"></div>
+                                    <div class="confirmation-modal">
+                                        <p>Are you sure you want to decline?</p>
+                                        <div class="btn-container">
+                                            <button class="yes" onclick="confirmDecline()">Yes</button>
+                                            <button class="no" onclick="closeModal()">No</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="active-orders">
+                    <div class="heading">
+                        <h2>Active Orders</h2>
+                            <div class="buttons">
+                                <div class="filter">
+                                    <a class="btn">Filter
+                                        <i class="ri-filter-3-line"></i>
+                                    </a>
+                                    <div class="dropdown">
+                                        <a href="#">Name</a>
+                                        <a href="#">Order ID</a>
+                                        <a href="#">Order Status</a>
+                                    </div>
+                                </div>
+                                 <div class="sort">
+                                    <a href="#" class="btn">Sort
+                                        <i class="ri-sort-desc"></i>
+                                    </a>
+                                    <div class="dropdown">
+                                        <a href="#">Name A-Z</a>
+                                        <a href="#">Name Z-A</a>
+                                        <a href="#">Oldest</a>
+                                        <a href="#">Newest</a>
+                                        <a href="#">Status</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <table class="active">
+                        <thead>
+                            <td>Order Number</td>
+                            <td>Name</td>
+                            <td>Order ID</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#0251</td>
+                                <td>Ichigo</td>
+                                <td>#59842</td>
+                                <td>Delivered</td>
+                            </tr>
+                            <tr>
+                                <td>#0252</td>
+                                <td>Rukia</td>
+                                <td>#65842</td>
+                                <td>Delivered</td>
+                            </tr>
+                            <tr>
+                                <td>#0253</td>
+                                <td>Renji</td>
+                                <td>#73468</td>
+                                <td>Out for Delivery</td>
+                            </tr>
+                            <tr>
+                                <td>#0254</td>
+                                <td>Byakuya</td>
+                                <td>#30221</td>
+                                <td>Preparing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="active-orders">
+                    <div class="heading">
+                        <h2>Cancelled Orders</h2>
+                            <div class="buttons">
+                                <div class="filter">
+                                    <a class="btn">Filter
+                                        <i class="ri-filter-3-line"></i>
+                                    </a>
+                                    <div class="dropdown">
+                                        <a href="#">Name</a>
+                                        <a href="#">Order ID</a>
+                                        <a href="#">Order Status</a>
+                                    </div>
+                                </div>
+                                 <div class="sort">
+                                    <a href="#" class="btn">Sort
+                                        <i class="ri-sort-desc"></i>
+                                    </a>
+                                    <div class="dropdown">
+                                        <a href="#">Name A-Z</a>
+                                        <a href="#">Name Z-A</a>
+                                        <a href="#">Oldest</a>
+                                        <a href="#">Newest</a>
+                                        <a href="#">Status</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <table class="active">
+                        <thead>
+                            <td>Order Number</td>
+                            <td>Name</td>
+                            <td>Order ID</td>
+                            <td>Reason/s</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#0245</td>
+                                <td>Monkey D. Luffy</td>
+                                <td>#59842</td>
+                                <td>Incorrect Order Details</td>
+                            </tr>
+                            <tr>
+                                <td>#0246</td>
+                                <td>Naruto Uzumaki</td>
+                                <td>#65842</td>
+                                <td>Delayed Delivery</td>
+                            </tr>
+                            <tr>
+                                <td>#0249</td>
+                                <td>Roronoa Zoro</td>
+                                <td>#73468</td>
+                                <td>Incorrect Order Details</td>
+                            </tr>
+                            <tr>
+                                <td>#0250</td>
+                                <td>Tnajiro Kamado</td>
+                                <td>#30221</td>
+                                <td>Technical Issues</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        /* Function to show the modal with slide-in animation */
+        function showModal() {
+            document.querySelector('.modal-overlay').classList.add('open');
+            var modal = document.querySelector('.confirmation-modal');
+            modal.classList.remove('closing'); /* Reset slide-out */
+            modal.style.display = 'block'; /* Ensure it's visible */
+        }
+    
+        /* Function to close the modal with slide-out animation */
+        function closeModal() {
+            var modal = document.querySelector('.confirmation-modal');
+            modal.classList.add('closing'); /* Slide-out animation */
+            setTimeout(() => {
+                modal.style.display = 'none'; /* Hide after animation */
+            }, 500); /* Duration matches the animation time */
+            
+            document.querySelector('.modal-overlay').classList.remove('open'); /* Hide overlay */
+            
+            var checkboxes = modal.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+            checkbox.checked = false; /* Uncheck all checkboxes */
+                });
+        }
+    
+        /* Function to confirm the decline action */
+        function confirmDecline() {
+            console.log("Order declined"); /* Example action */
+            closeModal(); /* Close the modal after confirmation */
+        }
+
+    </script>
+
+
+</body>
+</html>

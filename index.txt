@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="view.css" />
+    <title>ThorsTavern</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Thors<span>Tavern</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="#"><i class="ri-book-open-fill"></i> Menu</a></li>
+        <li class="link"><a href="#"><i class="ri-menu-line"></i> Categories</a></li>
+        <li class="link"><a href="#"><i class="ri-book-2-fill"></i> Recipe</a></li>
+        <li class="link"><a href="#"><i class="ri-group-2-fill"></i> About Us</a></li>
+        <li class="link"><a href="#"><i class="ri-star-smile-fill"></i> Reviews</a></li>
+      </ul>
+      <button class="btn"><i class="ri-user-fill"></i> Log-in</button>
+    </nav>
+    <header>
+      <div class="section__container header__container">
+        <div class="header__image">
+          <img src="./blueberry-cake.jpg" alt="header" />
+          <img src="./bread.jpg" alt="header" />
+        </div>
+        <div class="header__content">
+          <div>
+            <p class="sub__header"><i class="ri-shopping-cart-fill"></i> Order Now!</p>
+            <h1>Thors<br />sweet success!</h1>
+            <p class="section__subtitle">
+                ThorsTavern makes the best ideal desserts you'll ever have.
+                Come and visit ThorsTavern as you indulge yourself in relieving your sweet tooth with our desserts!
+            </p>
+            <div class="action__btns">
+              <button class="btn"><i class="ri-book-open-fill"></i> Menu</button>
+              <div class="story">
+                <div class="video__image">
+                  <img src="./images/BANANA.JPG" alt="story" />
+                  <span><i class="ri-play-fill"></i></span>
+                </div>
+                <span>Watch our story</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container desserts__container">
+        <div class="section__header">
+            <div>
+                <h2 class="section__title">Endeavor our best desserts!</h2>
+                <p class="section__subtitle">
+                    Linger our best desserts giving you the best quality and magnificient flavours.
+                    Here you can check our best and ideal desserts.
+                </p>
+            </div>
+            <div class="desserts__nav">
+                <span><i class="ri-arrow-left-line"></i></span>
+                <span><i class="ri-arrow-right-line"></i></span>
+            </div>
+        </div>
+        <div class="desserts__grid">
+            <div class="desserts__card">
+                <img src="./strawberrycake.jpg" alt="desserts">
+                <div class="desserts__details">
+                    <p class="desserts__title">Lustrum</p>
+                    <p class="desserts_subtitle">Ganache </p>
+                </div>
+            </div>
+            <div class="desserts__card">
+                <img src="./churros.jpg" alt="desserts">
+                <div class="desserts__details">
+                    <p class="desserts__title">Glazed</p>
+                    <p class="desserts_subtitle">Churros</p>
+                </div>
+            </div>
+            <div class="desserts__card">
+                <img src="./torte.jpg" alt="desserts">
+                <div class="desserts__details">
+                    <p class="desserts__title">Layered</p>
+                    <p class="desserts_subtitle">Vanilla Keso</p>
+                </div>
+            </div>
+            <div class="desserts__card">
+                <img src="./macarons.jpg" alt="desserts">
+                <div class="desserts__details">
+                    <p class="desserts__title">Multi-flavored</p>
+                    <p class="desserts_subtitle">Maracons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order">
+      <div class="section__container order__container">
+        <h2 class="section__title">Affordable Desserts</h2>
+        <p class="section__subtitle">
+          Experience our high level of desserts at affordable prices.
+          These desserts will surely make you forget your name.
+        </p>
+        <div class="order__grid">
+          <div class="order__card">
+            <img src="brownie_sunday.jpg" alt="order">
+            <div class="order__details" id="no1">
+              <p><i class="ri-star-s-fill"></i> Brownie-Sundae</p>
+              <div class="rating"><i class="ri-shield-star-fill"></i> 4.7</div>
+              <div class="booking__price">
+              <div class="price"><span> Price: </span>₱290.00</div>
+              <button class="book__now"><i class="ri-shopping-cart-fill"></i>  Buy</button>
+    
+              </div>
+            </div>
+          </div>
+          <div class="order__card">
+            <img src="overload.jpg" alt="order">
+            <div class="order__details">
+              <p><i class="ri-star-s-fill"></i> Fruit Overload</p>
+              <div class="rating"><i class="ri-shield-star-fill"></i> 4.4</div>
+              <div class="booking__price">
+              <div class="price"><span> Price: </span>₱165.00</div>
+              <button class="book__now"><i class="ri-shopping-cart-fill"></i>  Buy</button>
+    
+              </div>
+            </div>
+          </div>
+          <div class="order__card">
+            <img src="cheesecake.jpg" alt="order">
+            <div class="order__details">
+              <p><i class="ri-star-s-fill"></i> Custard Cheesecake</p>
+              <div class="rating"><i class="ri-shield-star-fill"></i> 4.5</div>
+              <div class="booking__price">
+              <div class="price"><span> Price: </span>₱175.00</div>
+              <button class="book__now"><i class="ri-shopping-cart-fill"></i>  Buy</button>
+    
+              </div>
+            </div>
+          </div>
+          <div class="order__card">
+            <img src="mushroom.jpg" alt="order">
+            <div class="order__details">
+              <p><i class="ri-star-s-fill"></i> Room-berry</p>
+              <div class="rating"><i class="ri-shield-star-fill"></i> 4.8</div>
+              <div class="booking__price">
+              <div class="price"><span> Price: </span>₱235.00</div>
+              <button class="book__now"><i class="ri-shopping-cart-fill"></i>  Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view__all">
+          <button class="btn"><i class="ri-book-open-fill"></i> More</button>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="section__container gallery__container">
+        <div class="image__gallery">
+          <div class="gallery__col">
+            <img src="cakesu.jpg" alt="gallery">
+          </div>
+          <div class="gallery__col">
+            <img src="hello.jpg" alt="gallery">
+            <img src="chocoshake.jpg" alt="gallery">
+          </div>
+        </div>
+        <div class="gallery__content">
+          <div>
+            <h2 class="section__title">
+              More desserts for you to review!
+            </h2>
+            <p class="section__subtitle">
+              The beauty of these desserts are made with love, passion, and as an art for you to try and experience their flavors.
+            </p>
+            <button class="btn"><i class="ri-search-line"></i> View Menu</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title">Subscribe to get special discounts</h2>
+          <p class="section__subtitle">
+            Input your email to subscribe to get special offers, huge discounts, and special prizes!
+          </p>
+        </div>
+        <div class="subscribe__form">
+          <form>
+            <input type="email" placeholder="Your Email here">
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Thors<span>Tavern</span></h3>
+          <p>
+            ThorsTavern is an e-commerce dessert website. You can order here, and of course, 
+            ThorsTavern will make sure to satisfy your cravings 
+            and sweet tooth with our special and delicious desserts.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h3><i class="ri-links-line"></i> Emails:</h3>
+          <p><i class="ri-facebook-circle-fill"></i> Facebook: <span> ThorsTavern Co.</span></p>
+          <p><i class="ri-twitter-fill"></i> Twitter: <span> @Thors_Tavern</span></p>
+          <p><i class="ri-instagram-fill"></i> Instagram: <span> @ThorsTavern032</span<></p>
+        </div>
+        <div class="footer__col">
+          <h3><i class="ri-tools-fill"></i> Support</h3>
+          <p><i class="ri-question-answer-fill"></i> FAQs</p>
+          <p><i class="ri-checkbox-circle-fill"></i> Terms & Conditions</p>
+          <p><i class="ri-shield-user-fill"></i> Privacy Policy</p>
+          <p><i class="ri-contacts-fill"></i> Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h3><i class="ri-contacts-book-2-fill"></i> Address</h3>
+          <p><span><i class="ri-map-pin-2-fill"></i> Address: </span><br/>
+            Camino Nuevo Governor. Alvarez street, Nuñez Extention, Zamboanga, 7000, Philippines
+          </p>
+          <p><span><i class="ri-mail-fill"></i> Email: </span> thors_tavern2024@gmail.com</p>
+          <p><span><i class="ri-phone-fill"></i> Phone: </span> +63 929 519 0987</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024, ThorsTavern . All rights reserved.
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav__logo {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(70, 28, 23);
+    cursor: pointer;
+  }
+  
+.nav__logo span {
+    color: #7e271e;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/baky.jpg)
+}
+
+.container form{
+    width: 700px;
+    padding: 20px 50px;
+    background: rgb(255, 255, 255);
+    border: 50px;
+    border-radius: 50px;
+}
+
+form .row{
+    display: flex;
+    gap: 15px;
+}
+
+.input-box .country, select{
+    width:610px;
+    padding: 15px 30px;
+    margin: 0px;
+    border-radius: 5px;
+    text-align: start;
+
+}
+.row .column{
+    flex: 1 1 250px;
+}
+.input-box .btn1 a{
+    text-decoration: none;
+    color: white;
+}
+.input-box .btn1 a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.column .title{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box{
+    margin: 15px 0;
+}
+
+.column .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box{
+    margin-top: 5px;
+}
+
+
+.btn1{
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+    padding: 12px 10px;
+    background: rgb(201, 201, 201);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn1:hover{
+    background: green;
+    color: white;
+}
+
+.input-box span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+
